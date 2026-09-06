@@ -7,6 +7,86 @@
     <link rel="icon" type="image/png" href="midia/Icon.png">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="historia.html">História</a>
+            <a href="membros.html">Membros</a>
+            <a href="espetaculos.html">Espetáculos</a>
+            <b>Recrutamento</b>
+        </nav>
+        <h1>Inscrições para o Teste</h1>
+    </header>
+    <main>
+        <p>
+            Todo grande espetáculo precisa de novos artistas.
+            Preencha o formulário abaixo caso acredite possuir
+            algo digno da atenção da Trupe do Infinito.
+        </p>
+        <form>
+
+            <fieldset>
+                <legend>Indentificação</legend>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <p>
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perfil Artístico</legend>
+                <p>
+                    <label for="especialidade">Principal Especialidade:</label>
+                    <select name="especialidade" id="especialidade">
+                        <option value=""></option>
+                        <option value="act">Atuação</option>
+                        <option value="music">Música</option>
+                        <option value="dance">Dança</option>
+                        <option value="ilusion">Ilusionismo</option>
+                        <option value="poetry">Poesia</option>
+                        <option value="combat">Combate</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </p>
+                <p>Experiência:</p>
+                <input type="radio" name="exp" id="iniciante" value="iniciante">
+                <label for="iniciante">Iniciante</label>
+                <input type="radio" name="exp" id="experiente" value="experiente">
+                <label for="experiente">Experiente</label>
+                <input type="radio" name="exp" id="profissional" value="profissional">
+                <label for="profissional">Profissional</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Apresentação</legend>
+                <p>
+                    <label for="interesse">O que te trás até nós?</label>
+                </p>
+                <textarea name="interesse" id="interesse" rows="8" cols="50" maxlength="1000" required placeholder="Digite aqui..."></textarea>
+                <p>
+                    <label for="port">Envie seu portifólio:</label>
+                    <input type="file" name="port" id="port">
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos">Estou ciente de que toda audição pode se
+                tornar parte do espetáculo.</label>
+            </p>
+            
+            <button type="submit">Enviar Candidatura</button>
+            <button type="reset">Limpar Formulário</button>
+
+        </form>
+    </main>
 </body>
 </html>

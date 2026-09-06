@@ -13,9 +13,12 @@
             <a href="historia.html">História</a>
             <a href="membros.html">Membros</a>
             <b>Espetáculos</b>
+            <a href="recrutamento.html">Recrutamento</a>
         </nav>
     </header>
     <main>
+    <h1>Espetáculos</h1>
+    <section id="tabela">
     <table>
         <thead><tr><th>Espetáculos</th><th>Membros</th><th>Situação</th></tr></thead>
             <tbody>
@@ -51,6 +54,65 @@
                 <tr><td><b>Intervalo</b></td><td>???</td><td>Concluído - ???</td></tr>
             </tbody>
     </table>
+    </section>
+    <section id="registro">
+        <h2>Registro de Palco</h2>
+        <form>
+            <p>
+            <label for="title">Título:</label>
+            <input type="text" name="title" id="title">
+            </p>
+            <p>
+            <label for="roteirista">Roteirista:</label>
+            <select name="roteirista" id="roteirista">
+                <option value="diletante">Diletante</option>
+                <option value="corvo">Corvo</option>
+                <option value="arauto">Arauto</option>
+                <option value="rosa">Rosa</option>
+                <option value="vibora">Víbora</option>
+                <option value="poeta">Poeta</option>
+                <option value="marionete">Marionete</option>
+                <option value="relogio">Relógio</option>
+            </select>
+            </p>
+            <p>Auxiliares: <br>
+                <input type="checkbox" name="diletante" id="diletante">
+                <label for="diletante">Diletante</label> <br>
+                <input type="checkbox" name="corvo" id="corvo">
+                <label for="corvo">Corvo</label><br>
+                <input type="checkbox" name="arauto" id="arauto">
+                <label for="arauto">Arauto</label> <br>
+                <input type="checkbox" name="rosa" id="rosa">
+                <label for="rosa">Rosa</label> <br>
+                <input type="checkbox" name="vibora" id="vibora">
+                <label for="vibora">Víbora</label> <br>
+                <input type="checkbox" name="poeta" id="poeta">
+                <label for="poeta">Poeta</label> <br>
+                <input type="checkbox" name="marionete" id="marionete">
+                <label for="marionete">Marionete</label> <br>
+                <input type="checkbox" name="relogio" id="relogio">
+                <label for="relogio">Relógio</label>
+            </p>
+            <p>
+                Situação: <br>
+                <input type="radio" name="espera" id="espera"> 
+                <label for="espera">Em espera</label> <br>
+                <input type="radio" name="plan" id="plan">
+                <label for="plan">Planejamento</label> <br>
+                <input type="radio" name="progress" id="progress">
+                <label for="progress">Em progresso</label> <br>
+                <input type="radio" name="done" id="done">
+                <label for="done">Concluído</label>
+            </p>
+            <p>
+                Resultado: <br>
+                <select name="result" id="result">
+                    <option value="sucesso">Sucesso</option>
+                    <option value="falha">Fracasso</option>
+                </select>
+            </p>
+        </form>
+    </section>
     </main>
 </body>
 </html>

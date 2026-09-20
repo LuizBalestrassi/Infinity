@@ -18,12 +18,29 @@ body{
 }
 
 h1{
-    color: goldenrod;
-    text-align: center;
-    text-shadow: 2px 2px 2px black;
-    font-family: 'Times New Roman', Times, serif;
+    width: 800px;
+    aspect-ratio: 3.5 / 1;
+
+    margin: -15px auto -10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(midia/Title.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: rgb(230, 180, 50);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
-    font-weight: 800;
+
+    text-shadow:
+        2px 2px 3px black,
+        0 0 8px rgb(120, 60, 0);
+    
+    letter-spacing: 3px;
 }
 
 #logo{
@@ -33,32 +50,49 @@ h1{
     border-radius: 2px;
     display: block;
     width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: -17px auto -20px;
 }
 
 .menu{
     color: rgb(27, 2, 2);
-    background-color: rgb(241, 221, 41);
+    background: linear-gradient( 180deg, rgb(243, 225, 121), rgb(187, 137, 12));
     border-style: solid;
     border-color: rgb(255, 240, 171) rgb(255, 240, 171) rgb(97, 91, 70) rgb(204, 192, 140);
     border-radius: 2px;
     border-width: 3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     padding: 25px;
-    text-align: center;
+    text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 22px;
+    text-shadow: 2px 2px 2px rgb(99, 73, 9);
+    font-size: 30px;
+    transition: 0.3s;
+    margin-top: -20px;
+}
+
+.menu:hover{
+    background: linear-gradient( 135deg, rgb(75, 4, 4), black);
+    color: rgb(255, 239, 149);
+    text-shadow: 6px 6px 6px rgb(255, 247, 202);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 50px;
 }
 
 li{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
-
 }
 
-#men1{
-    margin-left: 186px;
+.descrições-link{
+    line-height: 1px;
+    font-size: 10px;
 }

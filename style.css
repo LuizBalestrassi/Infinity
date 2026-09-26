@@ -33,7 +33,9 @@ h1{
     background-repeat: no-repeat;
 
     color: rgb(230, 180, 50);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Modern Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 50px;
 
     text-shadow:
@@ -43,18 +45,35 @@ h1{
     letter-spacing: 3px;
 }
 
+.logoGeral{
+    position: relative;
+    width: 900px;
+    max-width: 90%;
+    margin: 35px auto 45px;
+}
+
 #logo{
-    border-width: 8px;
-    border-style: ridge;
-    border-color: darkgoldenrod darkgoldenrod gold gold;
-    border-radius: 2px;
     display: block;
-    width: 1000px;
-    margin: -17px auto -20px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#Moldura{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110%;
+    height: 130%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
 }
 
 .menu{
     color: rgb(27, 2, 2);
+    position: relative;
     background: linear-gradient( 180deg, rgb(243, 225, 121), rgb(187, 137, 12));
     border-style: solid;
     border-color: rgb(255, 240, 171) rgb(255, 240, 171) rgb(97, 91, 70) rgb(204, 192, 140);
@@ -63,29 +82,90 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 260px;
+    height: 90px;
     padding: 25px;
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Laila", serif;
     text-shadow: 2px 2px 2px rgb(99, 73, 9);
     font-size: 30px;
     transition: 0.3s;
-    margin-top: -20px;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.menu .orn-left{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 220px;
+    height: 210px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+
+    transition: opacity 0.2s ease;
+}
+
+.menu .orn-left{
+    left: -75px;
+    background-image: url("midia/Molde2E.png");
+}
+
+.menu:hover .orn-left{
+    opacity: 1;
+}
+
+.menu span{
+    position: relative;
+    z-index: 3;
+}
+
+.menu::before{
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 100px;
+
+    background: url("midia/Molde1.png") center / contain no-repeat;
+
+    pointer-events: none;
+    z-index: 2;
+
+    opacity: 1;
+    transition: opacity 0.2s ease
+}
+
+.menu:hover::before{
+    opacity: 0;
 }
 
 .menu:hover{
     background: linear-gradient( 135deg, rgb(75, 4, 4), black);
     color: rgb(255, 239, 149);
-    text-shadow: 6px 6px 6px rgb(255, 247, 202);
+    text-shadow: 2px 2px 3px black,
+    0 0 8px rgba(255, 221, 120, 0.7);
 }
+
 
 nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 80px;
     padding: 20px;
-    margin-top: 50px;
+    margin: 0;
 }
 
 li{

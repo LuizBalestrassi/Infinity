@@ -17,7 +17,7 @@ body{
     background-attachment: fixed;
 }
 
-h1{
+#titleIndex{
     width: 800px;
     aspect-ratio: 3.5 / 1;
 
@@ -77,7 +77,7 @@ h1{
     background: linear-gradient( 180deg, rgb(243, 225, 121), rgb(187, 137, 12));
     border-style: solid;
     border-color: rgb(255, 240, 171) rgb(255, 240, 171) rgb(97, 91, 70) rgb(204, 192, 140);
-    border-radius: 2px;
+    border-radius: 10px;
     border-width: 3px 5px;
     display: flex;
     justify-content: center;
@@ -159,11 +159,11 @@ h1{
 }
 
 
-nav ul{
+#menuInicial ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
     padding: 20px;
     margin: 0;
 }
@@ -172,7 +172,55 @@ li{
     list-style: none;
 }
 
-.descrições-link{
-    line-height: 1px;
-    font-size: 10px;
+#Origem{
+
+    background: linear-gradient( 179deg, rgb(140, 6, 6), rgb(69, 6, 6));
+    padding: 20px;
+    border: 5px ridge gold;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(230, 180, 50);
+    font-family: "Modern Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px  black;
+
+}
+
+#historia{
+    background-color: rgb(17, 16, 16);
+
+    color: bisque;
+    font-family: "Laila", serif;
+    text-shadow: 2px 2px 2px rgb(99, 73, 9);
+
+    padding: 15px 30px;
+
+    border: 5px ridge darkgoldenrod;
+}
+#historia b{
+    color: rgb(249, 242, 142);
+}
+#historia i{
+    color: rgb(142, 209, 242);
+}
+#historia .Trupe{
+    color:gold
+}
+
+#back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+
+    border: 2px groove gold;
+    border-radius: 5px;
+    border-width: 3px 5px;
 }

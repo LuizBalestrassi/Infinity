@@ -40,7 +40,7 @@ body{
 
     text-shadow:
         2px 2px 3px black,
-        0 0 8px rgb(120, 60, 0);
+        0 0 8px rgb(120, 60, 0, 0.9);
     
     letter-spacing: 3px;
 }
@@ -174,7 +174,7 @@ li{
 
 #Origem{
 
-    background: linear-gradient( 179deg, rgb(140, 6, 6), rgb(69, 6, 6));
+    background: linear-gradient( 179deg, rgb(31, 1, 1), rgb(15, 3, 2));
     padding: 20px;
     border: 5px ridge gold;
 
@@ -193,7 +193,7 @@ li{
 }
 
 #historia{
-    background-color: rgb(17, 16, 16);
+    background: radial-gradient(circle, rgb(109, 7, 7), rgb(58, 5, 5));
 
     color: bisque;
     font-family: "Laila", serif;
@@ -201,7 +201,8 @@ li{
 
     padding: 15px 30px;
 
-    border: 5px ridge darkgoldenrod;
+    border: 10px ridge darkgoldenrod;
+    border-radius: 50px;
 }
 #historia b{
     color: rgb(249, 242, 142);
@@ -223,4 +224,11 @@ li{
     border: 2px groove gold;
     border-radius: 5px;
     border-width: 3px 5px;
+}
+
+.HistImg{
+    width: 650px;
+
+    margin: 20px;
+    border: 5px groove gold;
 }

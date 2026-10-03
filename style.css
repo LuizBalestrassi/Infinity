@@ -196,7 +196,7 @@ li{
     background: radial-gradient(circle, rgb(109, 7, 7), rgb(58, 5, 5));
 
     color: bisque;
-    font-family: "Laila", serif;
+    font-family: "Literata", serif;
     text-shadow: 2px 2px 2px rgb(99, 73, 9);
 
     padding: 15px 30px;
@@ -231,4 +231,6 @@ li{
 
     margin: 20px;
     border: 5px groove gold;
+
+    box-shadow: 5px 5px 10px black;
 }

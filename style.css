@@ -176,7 +176,9 @@ li{
 
     background: linear-gradient( 179deg, rgb(31, 1, 1), rgb(15, 3, 2));
     padding: 20px;
-    border: 5px ridge gold;
+    border: 2px ridge gold;
+    border-radius: 10px;
+    margin-top: 10px;
 
 
     display: flex;
@@ -215,7 +217,15 @@ li{
     color:gold
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #back{
+    width: 800px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,6 +235,16 @@ li{
     border: 2px groove gold;
     border-radius: 5px;
     border-width: 3px 5px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    color:rgb(75, 4, 4);
+    text-decoration: none;
+    font-family: "Modern Antiqua", serif;
+    font-weight: bolder;
+    font-size: large;
 }
 
 .HistImg{
@@ -234,4 +254,49 @@ li{
     border: 5px groove gold;
 
     box-shadow: 5px 5px 10px black;
+}
+
+.navegador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+}
+
+.navegador a, .navegador b{
+    background: radial-gradient(circle, goldenrod, darkgoldenrod);
+
+    padding: 8px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: -15px;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navegador a{
+    color:rgb(75, 4, 4);
+    text-decoration: none;
+    font-family: "Modern Antiqua", serif;
+    font-weight: bolder;
+    font-size: medium;
+    transition: 0.3s;
+}
+.navegador b{
+    color:black;
+    text-decoration: none;
+    font-family: "Modern Antiqua", serif;
+    font-weight: bolder;
+    font-size: medium;
+    transition: 0.3s;
+}
+
+.navegador a:hover{
+    background: linear-gradient( 135deg, rgb(75, 4, 4), black);
+    color: rgb(255, 239, 149);
+    text-shadow: 2px 2px 3px black,
+    0 0 8px rgba(255, 221, 120, 0.7);
 }

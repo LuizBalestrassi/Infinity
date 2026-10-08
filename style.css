@@ -172,10 +172,10 @@ li{
     list-style: none;
 }
 
-#Origem{
+.Origem{
 
     background: linear-gradient( 179deg, rgb(31, 1, 1), rgb(15, 3, 2));
-    padding: 20px;
+    padding: 15px;
     border: 2px ridge gold;
     border-radius: 10px;
     margin-top: 10px;
@@ -230,7 +230,7 @@ footer{
     justify-content: center;
     align-items: center;
 
-    background-color: black;
+    background: linear-gradient( 179deg, rgb(31, 1, 1), rgb(15, 3, 2));
 
     border: 2px groove gold;
     border-radius: 5px;
@@ -240,8 +240,7 @@ footer{
 
     box-sizing: border-box;
 
-    color:rgb(75, 4, 4);
-    text-decoration: none;
+    color: rgb(230, 180, 50);
     font-family: "Modern Antiqua", serif;
     font-weight: bolder;
     font-size: large;
@@ -299,4 +298,83 @@ footer{
     color: rgb(255, 239, 149);
     text-shadow: 2px 2px 3px black,
     0 0 8px rgba(255, 221, 120, 0.7);
+}
+
+#membrosNav a{
+    color: gold;
+    background: linear-gradient( 135deg, rgb(75, 4, 4), black);
+    border-style: solid;
+    border-color: rgb(255, 240, 171) rgb(255, 240, 171) rgb(97, 91, 70) rgb(204, 192, 140);
+    border-radius: 10px;
+    border-width: 3px 5px;
+    width: 230px;
+    height: 50px;
+    padding: 30px;
+    text-decoration: none;
+    font-family: "Litera", serif;
+    text-shadow: 2px 2px 2px rgb(99, 73, 9);
+    font-size: 30px;
+    transition: 0.3s;
+    margin: 5px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.membro{
+    background: radial-gradient(circle, rgb(109, 7, 7), rgb(29, 2, 2));
+
+    color: bisque;
+    font-family: "Litera", serif;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px rgb(99, 73, 9);
+
+    padding: 15px 30px;
+
+    border: 10px ridge darkgoldenrod;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: inset 15px 15px 45px black;
+}
+#visionaria{
+    background: radial-gradient(circle, rgb(34, 59, 64), rgb(23, 23, 23));
+}
+#corvo{
+    background: radial-gradient(circle, rgb(66, 8, 102), rgb(0, 0, 0));
+}
+#arauto{
+    background: radial-gradient(circle, rgb(109, 107, 92), rgb(101, 79, 7));
+}
+#rosa{
+    background: radial-gradient(circle, rgb(160, 10, 10), rgb(61, 7, 7));
+}
+#vibora{
+    background: radial-gradient(circle, rgb(23, 65, 21), rgb(8, 17, 6));
+}
+#poeta{
+    background: radial-gradient(circle, rgb(136, 136, 136), rgb(0, 0, 0));
+}
+#marionete{
+    background: radial-gradient(circle, rgb(35, 41, 69), rgb(86, 81, 90));
+}
+#relogio{
+    background: radial-gradient(circle, rgb(174, 121, 23), rgb(24, 10, 36));
+}
+#mimica{
+    background: radial-gradient(circle, rgb(4, 22, 99), rgb(6, 3, 53));
+}
+
+#membrosLayout{
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    gap: 35px;
+    align-items: start;
+
+    width: 95%;
+    max-width: 1650px;
+
+    margin: 35px auto;
 }

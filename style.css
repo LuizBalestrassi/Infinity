@@ -336,71 +336,117 @@ footer{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.63);
 
     padding: 15px 30px;
+    margin-bottom: 2%;
 
-    border: 10px ridge darkgoldenrod;
+    border: 5px solid darkgoldenrod;
     border-radius: 50px;
     box-sizing: border-box;
     box-shadow: inset 15px 15px 45px black;
 }
 #visionaria{
-    --cor-escura: #111315;
-    --cor-media: #454b50;
-    --cor-acento: #c8c2ba;
-    --cor-secundaria: #d2ad65;
+    --cor-media: #39444d;
+    --cor-escura: #0d1114;
+    --cor-acento: #bbc8d1;
+    --cor-secundaria: #d5aa55;
+        background:
+        radial-gradient(
+            circle at 15% 30%,
+            #45535d 0%,
+            #1b2429 35%,
+            #0d1012 75%
+        );
 }
 #diletante{
     --cor-escura: #150303;
     --cor-media: #560b0d;
-    --cor-acento: #981d22;
+    --cor-acento: #b92b32;
     --cor-secundaria: #c69a42;
 }
 #corvo{
     --cor-escura: #0c0801;
     --cor-media: #300030;
-    --cor-acento: #65156b;
+    --cor-acento: #8e3a9e;
     --cor-secundaria: #97835a;
 }
 #arauto{
-    --cor-escura: #646257;
-    --cor-media: #b4b0a0;
-    --cor-acento: #ddd3af;
-    --cor-secundaria: #e9cc91;
+    --cor-media: #6f6a58;
+    --cor-escura: #17140e;
+    --cor-acento: #f3b310;
+    --cor-secundaria: #f0d89a;
+        background:
+        radial-gradient(
+            circle at 15% 30%,
+            #77715f 0%,
+            #3d392f 35%,
+            #17140e 80%
+        );
 }
 #rosa{
-    --cor-escura: #0a0202;
-    --cor-media: #942825;
-    --cor-acento: #c7191e;
-    --cor-secundaria: #97835a;
+    --cor-acento: #c23b42;
+    --cor-media: #68191d;
+    --cor-escura: #120304;
+    --cor-secundaria: #b99a58;
+
+    box-shadow:
+    0 0 18px rgba(155, 30, 35, 0.45);
 }
 #vibora{
-    --cor-escura: #07100b;
-    --cor-media: #173b26;
-    --cor-acento: #39764b;
-    --cor-secundaria: #a98242;
+    --cor-media: #164c2d;
+    --cor-escura: #041109;
+    --cor-acento: #3d9860;
+    --cor-secundaria: #b88943;
+    background:
+    radial-gradient(
+        circle at 15% 30%,
+        #174b2c 0%,
+        #0b2818 40%,
+        #041009 80%
+    );
 }
 #poeta{
-    --cor-escura: #080707;
-    --cor-media: #270417;
-    --cor-acento: #d8ac6b;
-    --cor-secundaria: #ce9d4d;
+    --cor-media: #35101f;
+    --cor-escura: #090506;
+    --cor-acento: #b48a42;
+    --cor-secundaria: #d2b16d;
+        background:
+        radial-gradient(
+            circle at 15% 30%,
+            #35101f 0%,
+            #1d0911 38%,
+            #080506 78%
+        );
 }
 #marionete{
-    --cor-escura: #070a16;
-    --cor-media: #294861;
-    --cor-acento: #2c699b;
-    --cor-secundaria: #d7dbe8;
+    --cor-media: #203d5a;
+    --cor-escura: #070b16;
+    --cor-acento: #5594c2;
+    --cor-secundaria: #d4dbe3;
 }
 #relogio{
-    --cor-escura: #0e0901;
-    --cor-media: #352206;
-    --cor-acento: #7c4b14;
-    --cor-secundaria: #9b6e2c;
+    --cor-media: #493015;
+    --cor-escura: #080b10;
+    --cor-acento: #9c651e;
+    --cor-secundaria: #bb8c3a;
+        background:
+        radial-gradient(
+            circle at 15% 30%,
+            #50351a 0%,
+            #21150b 38%,
+            #07101b 100%
+        );
 }
 #mimica{
-    --cor-escura: #03010f;
-    --cor-media: #12084b;
-    --cor-acento: #2a188f;
-    --cor-secundaria: #69767e;
+    --cor-media: #132b73;
+    --cor-escura: #050616;
+    --cor-acento: #456fc7;
+    --cor-secundaria: #c7d0e4;
+    background:
+    radial-gradient(
+        circle at 15% 30%,
+        #19347c 0%,
+        #0c1747 35%,
+        #050616 75%
+    );
 }
 
 #membrosLayout{
@@ -441,6 +487,8 @@ footer{
 }
 .membro p{
     font-size: 20px;
+    line-height: 1.45;
+    margin-top: 1%;
 }
 .membro h2{
     font-size: 230%;

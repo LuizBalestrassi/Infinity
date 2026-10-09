@@ -323,12 +323,17 @@ footer{
 }
 
 .membro{
-    background: radial-gradient(circle, rgb(109, 7, 7), rgb(29, 2, 2));
+    background:
+        radial-gradient(
+            circle at 15% 35%,
+            var(--cor-media) 0%,
+            var(--cor-escura) 45%
+        );
 
     color: bisque;
     font-family: "Litera", serif;
     font-size: 18px;
-    text-shadow: 2px 2px 2px rgb(99, 73, 9);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.63);
 
     padding: 15px 30px;
 
@@ -338,31 +343,64 @@ footer{
     box-shadow: inset 15px 15px 45px black;
 }
 #visionaria{
-    background: radial-gradient(circle, rgb(34, 59, 64), rgb(23, 23, 23));
+    --cor-escura: #111315;
+    --cor-media: #454b50;
+    --cor-acento: #c8c2ba;
+    --cor-secundaria: #d2ad65;
+}
+#diletante{
+    --cor-escura: #150303;
+    --cor-media: #560b0d;
+    --cor-acento: #981d22;
+    --cor-secundaria: #c69a42;
 }
 #corvo{
-    background: radial-gradient(circle, rgb(66, 8, 102), rgb(0, 0, 0));
+    --cor-escura: #0c0801;
+    --cor-media: #300030;
+    --cor-acento: #65156b;
+    --cor-secundaria: #97835a;
 }
 #arauto{
-    background: radial-gradient(circle, rgb(109, 107, 92), rgb(101, 79, 7));
+    --cor-escura: #646257;
+    --cor-media: #b4b0a0;
+    --cor-acento: #ddd3af;
+    --cor-secundaria: #e9cc91;
 }
 #rosa{
-    background: radial-gradient(circle, rgb(160, 10, 10), rgb(61, 7, 7));
+    --cor-escura: #0a0202;
+    --cor-media: #942825;
+    --cor-acento: #c7191e;
+    --cor-secundaria: #97835a;
 }
 #vibora{
-    background: radial-gradient(circle, rgb(23, 65, 21), rgb(8, 17, 6));
+    --cor-escura: #07100b;
+    --cor-media: #173b26;
+    --cor-acento: #39764b;
+    --cor-secundaria: #a98242;
 }
 #poeta{
-    background: radial-gradient(circle, rgb(136, 136, 136), rgb(0, 0, 0));
+    --cor-escura: #080707;
+    --cor-media: #270417;
+    --cor-acento: #d8ac6b;
+    --cor-secundaria: #ce9d4d;
 }
 #marionete{
-    background: radial-gradient(circle, rgb(35, 41, 69), rgb(86, 81, 90));
+    --cor-escura: #070a16;
+    --cor-media: #294861;
+    --cor-acento: #2c699b;
+    --cor-secundaria: #d7dbe8;
 }
 #relogio{
-    background: radial-gradient(circle, rgb(174, 121, 23), rgb(24, 10, 36));
+    --cor-escura: #0e0901;
+    --cor-media: #352206;
+    --cor-acento: #7c4b14;
+    --cor-secundaria: #9b6e2c;
 }
 #mimica{
-    background: radial-gradient(circle, rgb(4, 22, 99), rgb(6, 3, 53));
+    --cor-escura: #03010f;
+    --cor-media: #12084b;
+    --cor-acento: #2a188f;
+    --cor-secundaria: #69767e;
 }
 
 #membrosLayout{
@@ -373,8 +411,45 @@ footer{
     gap: 35px;
     align-items: start;
 
-    width: 95%;
     max-width: 1650px;
 
     margin: 35px auto;
+}
+.membro-principal{
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    gap: 35px;
+
+    align-items: start;
+}
+.membro-imagem img{
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 10px var(--cor-media);
+}
+.membro-info{
+    margin-top: 5%;
+}
+.membro p{
+    font-size: 20px;
+}
+.membro h2{
+    font-size: 230%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -2px;
+    color: var(--cor-secundaria);
+    font-family: "Modern Antiqua", serif;
+}
+.membro b{
+    color: var(--cor-acento);
 }

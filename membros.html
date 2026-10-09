@@ -23,25 +23,66 @@
             <a href="espetaculos.html">Espetáculos</a>
             <a href="recrutamento.html">Recrutamento</a>
         </nav>
-        <h1 id="inicio" class="Origem">Membros da Trupe</h1>
+        <h1 id="inicio" class="Titulo">Membros da Trupe</h1>
     </header>
     <div id="membrosLayout">
-     <nav id="membrosNav">
-        <ul>
-            <li><a href="#visionaria"><i>Visionária</i></a></li>
-            <li><a href="#diletante">Diletante</a></li>
-            <li><a href="#corvo">Corvo</a></li>
-            <li><a href="#arauto">Arauto</a></li>
-            <li><a href="#rosa">Rosa</a></li>
-            <li><a href="#vibora">Víbora</a></li>
-            <li><a href="#poeta">Poeta</a></li>
-            <li><a href="#marionete">Marionete</a></li>
-            <li><a href="#relogio">Relógio</a></li>
-            <li><a href="#mimica">Mímica</a></li>
-        </ul>
-     </nav>
-     <main>
-        <section id="visionaria" class="membro">
+    <aside class="membros-lateral">
+        <div id="membroAtivoPreview">
+            <img id="seloGrande" src="midia/selos/max/Visionária.png" alt="Selo da Visionária" >
+            <span id="nomeSeloGrande">Visionária</span>
+        </div>
+        <nav id="membrosNav">
+            <div id="gradeSelos">
+                <button class="selo-mini" data-membro="diletante" data-nome="Diletante" id="SeloDiletante">
+                    <img src="midia/Selos/Min/Diletante.png" alt="">
+                    <span>Diletante</span>
+                </button>
+
+                <button class="selo-mini" data-membro="corvo" data-nome="Corvo" id="SeloCorvo">
+                    <img src="midia/Selos/Min/Corvo.png" alt="">
+                    <span>Corvo</span>
+                </button>
+
+                <button class="selo-mini" data-membro="arauto" data-nome="Arauto" id="SeloArauto">
+                    <img src="midia/Selos/Min/Arauto.png" alt="">
+                    <span>Arauto</span>
+                </button>
+
+                <button class="selo-mini" data-membro="rosa" data-nome="Rosa" id="SeloRosa">
+                    <img src="midia/Selos/Min/Rosa.png" alt="">
+                    <span>Rosa</span>
+                </button>
+
+                <button class="selo-mini" data-membro="vibora" data-nome="Víbora" id="SeloVibora">
+                    <img src="midia/Selos/Min/Vibora.png" alt="">
+                    <span>Víbora</span>
+                </button>
+
+                <button class="selo-mini" data-membro="poeta" data-nome="Poeta" id="SeloPoeta">
+                    <img src="midia/Selos/Min/Poeta.png" alt="">
+                    <span>Poeta</span>
+                </button>
+
+                <button class="selo-mini" data-membro="marionete" data-nome="Marionete" id="SeloMarionete">
+                    <img src="midia/Selos/Min/Marionete.png" alt="">
+                    <span>Marionete</span>
+                </button>
+
+                <button class="selo-mini" data-membro="relogio" data-nome="Relógio" id="SeloRelogio">
+                    <img src="midia/Selos/Min/Relogio.png" alt="">
+                    <span>Relógio</span>
+                </button>
+
+                <button class="selo-mini" data-membro="mimica" data-nome="Mímica" id="SeloMimica">
+                    <img src="midia/Selos/Min/Mímica.png" alt="">
+                    <span>Mímica</span>
+                </button>
+
+            </div>
+        </nav>
+    </aside>
+    <main id="painelMembros">
+        <section id="visionaria" class="membro ativo">
             <h2>Visionária</h2>
             <div class="membro-principal">
                 <div class="membro-imagem">
@@ -657,7 +698,6 @@
     </main>
     </div>
     <footer>
-        <a href="#inicio" id="back">Voltar para topo da página</a> <br>
     </footer>
 </body>
 

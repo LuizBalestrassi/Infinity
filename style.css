@@ -489,7 +489,7 @@ footer{
 
     padding: 1%;
 }
-#seloGrande{
+.seloGrande img{
     display: block;
 
     width: 200px;
@@ -497,7 +497,12 @@ footer{
 
     object-fit: contain;
 }
-#nomeSeloGrande{
+.seloGrande span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nomeSeloGrande{
     color: goldenrod;
 
     font-family: "Modern Antiqua", serif;
@@ -618,4 +623,10 @@ footer{
 
 #SeloMimica{
     --escrita: #759de6;
+}
+.seloGrande{
+    display: none;
+}
+.seloGrande.ativo{
+    display: block;
 }

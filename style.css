@@ -194,7 +194,7 @@ li{
 
 }
 
-#historia{
+.page{
     background: radial-gradient(circle, rgb(109, 7, 7), rgb(58, 5, 5));
 
     color: bisque;
@@ -203,17 +203,24 @@ li{
     text-shadow: 2px 2px 2px rgb(99, 73, 9);
 
     padding: 15px 30px;
+    margin: 30px auto;
 
     border: 10px ridge darkgoldenrod;
     border-radius: 50px;
+
+    display: none;
+
+    max-width: 59%;
+
+    line-height: 180%;
 }
-#historia b{
+.page b{
     color: rgb(249, 242, 142);
 }
-#historia i{
+.page i{
     color: rgb(142, 209, 242);
 }
-#historia .Trupe{
+.page .Trupe{
     color:gold
 }
 
@@ -224,12 +231,71 @@ footer{
 }
 
 .HistImg{
-    width: 650px;
+    width: 68%;
 
-    margin: 20px;
+    margin: 30px auto 10px;
     border: 5px groove gold;
 
+    display: flex;
+
     box-shadow: 5px 5px 10px black;
+}
+
+#HistFooter{
+    background: linear-gradient( 179deg, rgb(31, 1, 1), rgb(15, 3, 2));
+    padding: 5px;
+    border: 2px ridge gold;
+    border-radius: 10px;
+    margin: -25px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(230, 180, 50);
+    font-family: "Modern Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px  black;
+
+    box-sizing: border-box;
+    width: 20%;
+}
+
+#HistFooter img{
+    display: block;
+
+    width: 40px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+#HistFooter p{
+    margin: 0 auto;
+}
+
+.cont{
+    display: none;
+}
+
+.seta{
+    background: transparent;
+    border: none;
+
+    color: gold;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    cursor: pointer;
+}
+
+.seta:hover{
+    filter: brightness(1.35);
+    transform: scale(1.05);
 }
 
 .navegador{

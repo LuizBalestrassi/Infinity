@@ -1,6 +1,6 @@
 body{
     background-color: rgb(49, 21, 21);
-        color: var(--texto-claro);
+        color: bisque;
 
     background-image:
         linear-gradient(
@@ -198,7 +198,7 @@ li{
     background: radial-gradient(circle, rgb(109, 7, 7), rgb(58, 5, 5));
 
     color: bisque;
-    font-family: "Litera", serif;
+    font-family: "Literata", serif;
     font-size: 18px;
     text-shadow: 2px 2px 2px rgb(99, 73, 9);
 
@@ -236,7 +236,7 @@ footer{
     margin: 30px auto 10px;
     border: 5px groove gold;
 
-    display: flex;
+    display: block;
 
     box-shadow: 5px 5px 10px black;
 }
@@ -291,6 +291,10 @@ footer{
     gap: 5px;
 
     cursor: pointer;
+
+    font-family: "Literata", serif;
+    font-weight: bolder;
+    font-size: medium;
 }
 
 .seta:hover{
@@ -354,7 +358,7 @@ footer{
         );
 
     color: bisque;
-    font-family: "Litera", serif;
+    font-family: "Literata", serif;
     font-size: 18px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.63);
 
@@ -365,9 +369,6 @@ footer{
     border-radius: 50px;
     box-sizing: border-box;
     box-shadow: inset 15px 15px 45px black;
-}
-.ativo{
-    display: block;
 }
 #visionaria{
     --cor-media: #39444d;
@@ -632,7 +633,7 @@ footer{
     color: var(--escrita);
     text-shadow: 0 2px 4px black, 0 0 7px black, 0 0 10px var(--escrita);
 
-    font-family: "Literata", serif;
+    font-family: "Literatata", serif;
     font-size: 25px;
 
     position: absolute;
@@ -694,5 +695,15 @@ footer{
     display: none;
 }
 .seloGrande.ativo{
+    display: block;
+}
+.page.ativo{
+    display: block;
+}
+
+.membro.ativo{
+    display: block;
+}
+.cont.ativo{
     display: block;
 }

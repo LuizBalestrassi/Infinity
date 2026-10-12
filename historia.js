@@ -6,7 +6,7 @@ let contador = 0
 
 botaoProximo.onclick = function passarPagina(){
     document.querySelector(".page.ativo").classList.remove("ativo")
-    if(contador < 6){contador += 1}
+    if(contador < listaImagens.length - 1){contador += 1}
     else{contador = 0}
     listaImagens[contador].classList.add("ativo")
     document.querySelector(".cont.ativo").classList.remove("ativo")
@@ -17,7 +17,7 @@ botaoProximo.onclick = function passarPagina(){
 botaoAnterior.onclick = function voltarPagina(){
     document.querySelector(".page.ativo").classList.remove("ativo")
     if(contador > 0){contador -= 1}
-    else{contador = 6}
+    else{contador = listaImagens.length - 1}
     listaImagens[contador].classList.add("ativo")
     document.querySelector(".cont.ativo").classList.remove("ativo")
     listaContador[contador].classList.add("ativo")

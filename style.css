@@ -707,3 +707,288 @@ footer{
 .cont.ativo{
     display: block;
 }
+.tabela{
+    background: radial-gradient(circle, rgb(78, 4, 4), rgb(58, 5, 5));
+
+    color: bisque;
+    font-family: "Literata", serif;
+    font-size: 18px;
+    text-shadow: 0px 0px 5px rgb(99, 73, 9);
+
+    border: 10px ridge darkgoldenrod;
+    border-radius: 1px;
+
+    max-width: fit-content;
+
+    margin: 0 auto;
+
+    display: none;
+}
+.tabela th,
+.tabela td{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.tabela b{
+    color: goldenrod;
+    filter: brightness(1.5);
+}
+.tabela .fracasso{
+    color: #000000;
+    text-shadow: 0px 0px 5px #180304;
+}
+.tabela i{
+    color: #5594c2;
+}
+.tabela .Mystery{
+    filter: brightness(2);
+}
+.tabela .Plano{
+    color: rgb(247, 210, 166);
+}
+.tabela tr td{
+    border-bottom: 3px solid darkgoldenrod;
+    border-radius: 10px;
+    border-top: 50px solid transparent;
+    text-align: center;
+}
+.tabela thead{
+    color: gold;
+    font-family: "Literata", serif;
+    font-weight: bold;
+    font-size: 35px;
+    background-color: rgb(45, 3, 3);
+}
+.membros-espetaculo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.membros-espetaculo img{
+    width: 110px;
+}
+.MoldeTabela{
+    position: relative;
+}
+.MoldeTabela img{
+    position: absolute;
+    width: 250px;
+
+    top: 50%;
+    transform: translateY(-55%);
+}
+.MoldeTabela:first-child img{
+    right: 55%;
+    transform: translateY(-53%);
+}
+
+.MoldeTabela:last-child img{
+    left: 55%;
+}
+#registro{
+    background: radial-gradient(circle, rgb(78, 4, 4), rgb(58, 5, 5));
+
+    color: bisque;
+    font-family: "Literata", serif;
+    font-size: 18px;
+    text-shadow: 0px 0px 5px rgb(99, 73, 9);
+
+    border: 10px ridge darkgoldenrod;
+    border-radius: 1px;
+
+    margin: 30px auto;
+
+    max-width: fit-content;
+}
+#registro h2{
+    color: gold;
+    font-family: "Modern Antiqua", serif;
+    font-weight: bold;
+    font-size: 35px;
+    background-color: rgb(61, 4, 4);
+    border-bottom: 2px solid darkgoldenrod;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px auto;
+}
+.indicador{
+    color: goldenrod;
+    font-size: 30px;
+    font-family: "Literata", serif;
+}
+.card-form{
+    display: flex;
+}
+#registro p{
+    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+input, select{
+    padding: 5px;
+    margin-left: 10px;
+    transform: translateY(-10%);
+    border: 2px solid gold;
+    border-radius: 7px;
+    background-color: rgb(226, 225, 223);
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+    border-color: gold;
+    box-shadow: 0 0 8px goldenrod;
+}
+input::placeholder{
+    color: #9e7d68;
+    font-style: italic;
+}
+input:checked{
+    accent-color: gold;
+    box-shadow: 0 0 8px goldenrod;
+}
+#Registrar{
+    color: black;
+    background: linear-gradient( 180deg, goldenrod, darkgoldenrod);
+    border-style: solid;
+    border-color: goldenrod;
+    border-radius: 10px;
+    border-width: 3px 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Literata", serif;
+    text-shadow: 2px 2px 2px rgb(99, 73, 9);
+    font-size: 20px;
+    margin: 30px;
+    cursor: pointer;
+}
+.auxiliares{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 25px;
+}
+fieldset{
+    border: none;
+}
+#registro select:focus{
+    outline: none;
+    border-color: gold;
+    box-shadow: 0 0 8px goldenrod;
+}
+#registro button{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#registro button:hover{
+    filter: brightness(1.2);
+    transform: scale(1.04);
+}
+
+legend{
+    color: gold;
+    font-family: "Modern Antiqua", serif;
+    font-weight: bold;
+    font-size: 25px;
+    background: linear-gradient(165deg, rgb(75, 4, 4), rgb(65,5,5));
+    border-bottom: 2px solid darkgoldenrod;
+    border-radius: 50px;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+.auxiliares{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 30px;
+    row-gap: 5px;
+}
+#modalRegistro{
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.75);
+
+        justify-content: center;
+    align-items: center; 
+
+    z-index: 1000;
+}
+#janelaRegistro{
+    position: relative;
+    transform: scale(0.97);
+}
+#fecharRegistro{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    cursor: pointer;
+
+    background: linear-gradient( 180deg, goldenrod, darkgoldenrod);
+
+    border-style: solid;
+    border-color: goldenrod;
+    border-radius: 10px;
+    border-width: 3px;
+
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    text-decoration: none;
+    font-family: "Literata", serif;
+    text-shadow: 2px 2px 2px rgb(99, 73, 9);
+    font-size: 20px;
+
+    margin-top: 40px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.EspecButtons{
+    background: linear-gradient( 179deg, rgb(31, 1, 1), rgb(15, 3, 2));
+    padding: 5px;
+    border: 2px ridge gold;
+    border-radius: 10px;
+    margin: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(230, 180, 50);
+    font-family: "Modern Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px  black;
+
+    box-sizing: border-box;
+    width: 20%;
+    cursor: pointer;
+    pointer-events: all;
+}
+.EspecButtons:hover{
+    filter: brightness(1.35);
+    transform: scale(1.05);
+}
+#EspecFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#EspecAnt{
+    margin-right: 0px;
+}
+.tabela.ativo{
+    display: block;
+}
+#abrirRegistro{
+    margin-right: 250px;
+}

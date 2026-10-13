@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espetáculos - Infinito</title>
     <link rel="icon" type="image/png" href="midia/Icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Modern+Antiqua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Modern+Antiqua&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,103 +23,780 @@
         </nav>
     </header>
     <main>
-    <h1>Espetáculos</h1>
-    <section id="tabela">
+    <h1 class="Titulo">Espetáculos</h1>
+    <section class="tabela ativo">
     <table>
-        <thead><tr><th>Espetáculos</th><th>Membros</th><th>Situação</th></tr></thead>
+        <thead><tr><th class="MoldeTabela"><img src="midia/Molde2E.png" alt=""><span class="fundoMolde">Títulos</span></th><th>Membros</th><th class="MoldeTabela"><span class="fundoMolde">Situação</span><img src="midia/Molde2D.png" alt=""></th></tr></thead>
             <tbody>
-                <tr><td rowspan="2"><b>Espetáculo Arcano</b></td><td>Diletante</td><td rowspan="2"><i>Em Progresso...</i></td></tr>
-                <tr><td>???</td></tr>
-                <tr><td rowspan="2"><b>Alistamento Divino</b></td><td>Arauto</td><td rowspan="2"><i>Em progresso...</i></td></tr>
-                <tr><td>Marionete</td></tr>
-                <tr><td rowspan="2"><b>Baile do Jardim XI</b></td><td>Rosa</td><td rowspan="2">*Em planejamento*</td></tr>
-                <tr><td>Víbora</td></tr>
-                <tr><td><b>Palavras Benditas</b></td><td>Poeta</td><td>Em espera.</td></tr>
-                <tr><td rowspan="2"><b>Caça ao Tesouro</b></td><td>Corvo</td><td rowspan="2">Concluído - <b>Sucesso</b></td></tr>
-                <tr><td>Relógio</td></tr>
-                <tr><td rowspan="2"><b>O Último Aplauso</b></td><td>Diletante</td><td rowspan="2">Concluído - <b>Sucesso</b></td></tr>
-                <tr><td>Poeta</td></tr>
-                <tr><td rowspan="2"><b>Sinfonia dos Ausentes</b></td><td>Arauto</td><td rowspan="2">Concluído - <b>Sucesso</b></td></tr>
-                <tr><td>Marionete</td></tr>
-                <tr><td rowspan="2"><b>Galeria sem Rostos</b></td><td>Corvo</td><td rowspan="2">Concluído - <b>Sucesso</b></td></tr>
-                <tr><td>Marionete</td></tr>
-                <tr><td rowspan="2"><b>Banquete das Sete Taças</b></td><td>Víbora</td><td rowspan="2">Concluído - <b>Sucesso</b></td></tr>
-                <tr><td>Rosa</td></tr>
-                <tr><td rowspan="2"><b>Réquiem para um Rei</b></td><td>Poeta</td><td rowspan="2">Concluído - <b>Sucesso</b></td></tr>
-                <tr><td>Arauto</td></tr>
-                <tr><td rowspan="2"><b>A Rosa Fúnebre</b></td><td>Corvo</td><td rowspan="2">Concluído - <b>Sucesso</b></td></tr>
-                <tr><td>Rosa</td></tr>
-                <tr><td rowspan="2"><b>Cinzas sobre o Palco</b></td><td>Diletante</td><td rowspan="2">Concluído - <b>Fracasso</b></td></tr>
-                <tr><td>Rosa</td></tr>
-                <tr><td rowspan="3"><b>O Leilão Impossível</b></td><td>Diletante</td><td rowspan="3">Concluído - <b>Sucesso</b></td></tr>
-                <tr><td>Víbora</td></tr>
-                <tr><td>Corvo</td></tr>
-                <tr><td rowspan="3"><b>O Funeral do Sol</b></td><td>Arauto</td><td rowspan="3">Concluído - <b>Sucesso</b></td></tr>
-                <tr><td>Poeta</td></tr>
-                <tr><td>Rosa</td></tr>
-                <tr><td><b>Intervalo</b></td><td>???</td><td>Concluído - ???</td></tr>
+                <tr><td><b>Espetáculo Arcano</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"><img src="midia/Selos/Max/Mímica.png" alt="Selo Mímica"></td><td><i>Em Progresso...</i></td></tr>
+                <tr><td><b>Alistamento Divino</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"><img src="midia/Selos/Max/Marionete.png" alt="Selo Marionete"></td><td><i>Em progresso...</i></td></tr>
+                <tr><td><b>Baile do Jardim XI</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa"><img src="midia/Selos/Max/Vibora.png" alt="Selo Vibora"></td><td class="Plano">Em planejamento</td></tr>
+                <tr><td><b>Palavras Benditas</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta"></td><td>Em espera.</td></tr>
+                <tr><td><b>Caça ao Tesouro</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio"></td><td>Concluído - <b>Sucesso</b></td></tr>
+                <tr><td><b>O Último Aplauso</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"><img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta"></td><td>Concluído - <b>Sucesso</b></td></tr>
+                <tr><td><b>Sinfonia dos Ausentes</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"><img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio"></td><td>Concluído - <b>Sucesso</b></td></tr>
+                <tr><td><b>Galeria sem Rostos</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Marionete.png" alt="Selo Marionete"></td><td>Concluído - <b>Sucesso</b></td></tr>
+                <tr><td><b>Banquete das Sete Taças</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"></td><td>Concluído - <b>Sucesso</b></td></tr>
+                <tr><td><b>Réquiem para um Rei</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"></td><td>Concluído - <b>Sucesso</b></td></tr>
+                <tr><td><b>A Rosa Fúnebre</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa"></td><td>Concluído - <b>Sucesso</b></td></tr>
+                <tr><td><b>Cinzas sobre o Palco</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"><img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa"></td><td>Concluído - <b class="fracasso">Fracasso</b></td></tr>
+                <tr><td><b>O Leilão Impossível</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"><img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+                <tr><td><b>O Funeral do Sol</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"><img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta"><img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa"></td><td>Concluído - <b>Sucesso</b></td></tr>
+                <tr><td><b>Intervalo</b></td><td class="membros-espetaculo"><img src="midia/Icon.png" alt="Selo Trupe"></td><td>Concluído - <i class="Mystery">???</i></td></tr>
             </tbody>
     </table>
     </section>
-    <section id="registro">
-        <h2>Registro de Palco</h2>
-        <form>
-            <p>
-            <label for="title">Título:</label>
-            <input type="text" name="title" id="title">
-            </p>
-            <p>
-            <label for="roteirista">Roteirista:</label>
-            <select name="roteirista" id="roteirista">
-                <option value="diletante">Diletante</option>
-                <option value="corvo">Corvo</option>
-                <option value="arauto">Arauto</option>
-                <option value="rosa">Rosa</option>
-                <option value="vibora">Víbora</option>
-                <option value="poeta">Poeta</option>
-                <option value="marionete">Marionete</option>
-                <option value="relogio">Relógio</option>
-            </select>
-            </p>
-            <p>Auxiliares: <br>
-                <input type="checkbox" name="auxiliares" id="diletante" value="diletante">
-                <label for="diletante">Diletante</label> <br>
-                <input type="checkbox" name="auxiliares" id="corvo" value="corvo">
-                <label for="corvo">Corvo</label><br>
-                <input type="checkbox" name="auxiliares" id="arauto" value="arauto">
-                <label for="arauto">Arauto</label> <br>
-                <input type="checkbox" name="auxiliares" id="rosa" value="rosa">
-                <label for="rosa">Rosa</label> <br>
-                <input type="checkbox" name="auxiliares" id="vibora" value="vibora">
-                <label for="vibora">Víbora</label> <br>
-                <input type="checkbox" name="auxiliares" id="poeta" value="poeta">
-                <label for="poeta">Poeta</label> <br>
-                <input type="checkbox" name="auxiliares" id="marionete" value="marionete">
-                <label for="marionete">Marionete</label> <br>
-                <input type="checkbox" name="auxiliares" id="relogio" value="relogio">
-                <label for="relogio">Relógio</label>
-            </p>
-            <p>
-                Situação: <br>
-                <input type="radio" name="situacao" id="espera" value="espera"> 
-                <label for="espera">Em espera</label> <br>
-                <input type="radio" name="situacao" id="plan" value="plan">
-                <label for="plan">Planejamento</label> <br>
-                <input type="radio" name="situacao" id="progress" value="progress">
-                <label for="progress">Em progresso</label> <br>
-                <input type="radio" name="situacao" id="done" value="done">
-                <label for="done">Concluído</label>
-            </p>
-            <p>
-                Resultado: <br>
-                <select name="result" id="result">
-                    <option value="sucesso">Sucesso</option>
-                    <option value="falha">Fracasso</option>
-                </select>
-            </p>
-            <button type="submit">Registrar</button>
-        </form>
+    <section class="tabela">
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="MoldeTabela">
+                        <img src="midia/Molde2E.png" alt="">
+                        <span class="fundoMolde">Títulos</span>
+                    </th>
+
+                    <th>Membros</th>
+
+                    <th class="MoldeTabela">
+                        <span class="fundoMolde">Situação</span>
+                        <img src="midia/Molde2D.png" alt="">
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><b>Ensaio para Lugar Nenhum</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                        <img src="midia/Selos/Max/Marionete.png" alt="Selo Marionete">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>A Noite das Portas Abertas</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                        <img src="midia/Selos/Max/Marionete.png" alt="Selo Marionete">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Coral dos Afogados</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto">
+                        <img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta">
+                        <img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Nove Cadeiras Vazias</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                        <img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>A Casa que Aprendeu a Gritar</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa">
+                        <img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora">
+                        <img src="midia/Selos/Max/Marionete.png" alt="Selo Marionete">
+                    </td>
+                    <td>Concluído - <b class="fracasso">Fracasso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>A Colheita dos Espelhos</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                        <img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Procissão para Homem Nenhum</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto">
+                        <img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo">
+                        <img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Quarto Atrás do Palco</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Marionete.png" alt="Selo Marionete">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>A Última Testemunha</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo">
+                        <img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora">
+                    </td>
+                    <td>Concluído - <b class="fracasso">Fracasso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Céu sem Estrelas</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                        <img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto">
+                        <img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Fio e a Agulha</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Marionete.png" alt="Selo Marionete">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>A Boneca sem Sombra</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                        <img src="midia/Selos/Max/Marionete.png" alt="Selo Marionete">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+            </tbody>
+        </table>
     </section>
+
+
+    <!-- =========================================================
+        ERA V — O TEATRO DAS OITO MÁSCARAS
+    ========================================================= -->
+
+    <section class="tabela">
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="MoldeTabela">
+                        <img src="midia/Molde2E.png" alt="">
+                        <span class="fundoMolde">Títulos</span>
+                    </th>
+
+                    <th>Membros</th>
+
+                    <th class="MoldeTabela">
+                        <span class="fundoMolde">Situação</span>
+                        <img src="midia/Molde2D.png" alt="">
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><b>O Homem que Morreu Duas Vezes</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo">
+                        <img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Evangelho das Cinzas</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto">
+                        <img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>A Cidade sob o Lençol</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                        <img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa">
+                        <img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora">
+                    </td>
+                    <td>Concluído - <b class="fracasso">Fracasso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Treze Minutos de Silêncio</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                        <img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Jardim dos Nomes Mortos</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa">
+                        <img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>A Ópera da Última Palavra</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                        <img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Cartas para Quem Nunca Nasceu</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                        <img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Escritor sem Rosto</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                        <img src="midia/Selos/Max/Poeta.png" alt="Selo Poeta">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- =========================================================
+        ERA IV — FLORES, PRESAS E VENENO
+    ========================================================= -->
+
+    <section class="tabela">
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="MoldeTabela">
+                        <img src="midia/Molde2E.png" alt="">
+                        <span class="fundoMolde">Títulos</span>
+                    </th>
+                    <th>Membros</th>
+                    <th class="MoldeTabela">
+                        <span class="fundoMolde">Situação</span>
+                        <img src="midia/Molde2D.png" alt="">
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><b>O Banquete da Viúva</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora">
+                        <img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Jardim para uma Criança Morta</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa">
+                        <img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Beijo da Serpente</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora">
+                        <img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Sete Noivas para um Cadáver</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa">
+                        <img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b class="fracasso">Fracasso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>A Flor que Bebia Sangue</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Venenos para uma Rainha</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Jardim das Duas Irmãs</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Rosa.png" alt="Selo Rosa">
+                        <img src="midia/Selos/Max/Vibora.png" alt="Selo Víbora">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- =========================================================
+        ERA III — A MÁQUINA DO IMPOSSÍVEL
+    ========================================================= -->
+
+    <section class="tabela">
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="MoldeTabela"><img src="midia/Molde2E.png" alt=""><span class="fundoMolde">Títulos</span></th>
+                    <th>Membros</th>
+                    <th class="MoldeTabela"><span class="fundoMolde">Situação</span><img src="midia/Molde2D.png" alt=""></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><b>O Fim do Mundo</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                        <img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo">
+                        <img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Meia-Noite ao Meio-Dia</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Trem que Nunca Chegou</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>A Décima Terceira Hora</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Os Homens Parados</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b class="fracasso">Fracasso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Ontem Depois de Amanhã</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Quarto dos 61 Segundos</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                        <img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>O Relojoeiro Morto</b></td>
+                    <td class="membros-espetaculo">
+                        <img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária">
+                        <img src="midia/Selos/Max/Relogio.png" alt="Selo Relógio">
+                    </td>
+                    <td>Concluído - <b>Sucesso</b></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- =========================================================
+        ERA II — O GRANDE TEATRO
+    ========================================================= -->
+
+    <section class="tabela">
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="MoldeTabela"><img src="midia/Molde2E.png" alt=""><span class="fundoMolde">Títulos</span></th>
+                    <th>Membros</th>
+                    <th class="MoldeTabela"><span class="fundoMolde">Situação</span><img src="midia/Molde2D.png" alt=""></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr><td><b>O Santo de Madeira</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>A Última Confissão</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Palácio sem Rei</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td>
+                    <td>Concluído - <b class="fracasso">Fracasso</b></td></tr>
+
+                <tr><td><b>O Homem no Espelho Errado</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>Coroação dos Loucos</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Entreato</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionaria"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"></td>
+                    <td>Concluído - <b class="Mystery">Fracasso</b></td></tr>
+
+                <tr><td><b>O Julgamento da Lua</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>Uma Peça para Nenhuma Plateia</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Santo que Pediu para Morrer</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>A Máscara de Outro Homem</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Banquete dos Condenados</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"></td>
+                    <td>Concluído - <b class="fracasso">Fracasso</b></td></tr>
+
+                <tr><td><b>Milagre em Três Atos</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>A Cidade que Esqueceu Domingo</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Julgamento sem Crime</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>A Comédia do Homem Morto</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Primeiro Aplauso</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Diletante.png" alt="Selo Diletante"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- =========================================================
+        ERA I — QUANDO O ARAUTO FALOU
+    ========================================================= -->
+
+    <section class="tabela">
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="MoldeTabela"><img src="midia/Molde2E.png" alt=""><span class="fundoMolde">Títulos</span></th>
+                    <th>Membros</th>
+                    <th class="MoldeTabela"><span class="fundoMolde">Situação</span><img src="midia/Molde2D.png" alt=""></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr><td><b>A Catedral sem Deus</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Sermão das Mil Vozes</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>Procissão do Homem Cego</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>Sete Sinos para o Fim</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"></td>
+                    <td>Concluído - <b class="fracasso">Fracasso</b></td></tr>
+
+                <tr><td><b>O Primeiro Anúncio</b></td>
+                    <td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Arauto.png" alt="Selo Arauto"></td>
+                    <td>Concluído - <b>Sucesso</b></td></tr>
+
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- =========================================================
+        ERA ZERO — OS ANOS DO CORVO
+    ========================================================= -->
+
+    <section class="tabela">
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="MoldeTabela"><img src="midia/Molde2E.png" alt=""><span class="fundoMolde">Títulos</span></th>
+                    <th>Membros</th>
+                    <th class="MoldeTabela"><span class="fundoMolde">Situação</span><img src="midia/Molde2D.png" alt=""></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr><td><b>O Homem no Fundo do Poço</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>A Festa dos Carrascos</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>Onze Túmulos Vazios</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>A Criança no Campanário</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td><td>Concluído - <b class="fracasso">Fracasso</b></td></tr>
+
+                <tr><td><b>O Último Homem da Aldeia</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>A Mulher que Não Tinha Nome</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Matadouro dos Santos</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b class="fracasso">Fracasso</b></td></tr>
+
+                <tr><td><b>O Quarto sem Porta</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Homem que Não Projetava Sombra</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Cortejo das Máscaras Brancas</b></td><td class="membros-espetaculo"><i class="Mystery">???</i></td><td><i class="Mystery">Registro incompleto</i></td></tr>
+
+                <tr><td><b>A Noite em que Ninguém Dormiu</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Carrasco sem Rosto</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Circo das Crianças Perdidas</b></td><td class="membros-espetaculo"><i class="Mystery">???</i></td><td><i class="Mystery">Registro incompleto</i></td></tr>
+
+                <tr><td><b>Três Batidas na Porta</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Vilarejo que Não Amanheceu</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b class="fracasso">Fracasso</b></td></tr>
+
+                <tr><td><b>A Ceia dos Enforcados</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>A Mulher Dentro da Parede</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Último Trem de Saint-Véran</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Homem que Pediu um Julgamento</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Segundo Funeral de Elias Mourant</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>A Noite das Lanternas Negras</b></td><td class="membros-espetaculo"><i class="Mystery">???</i></td><td><i class="Mystery">Registro incompleto</i></td></tr>
+
+                <tr><td><b>O Teatro dos Mortos</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Julgamento</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><img src="midia/Selos/Max/Corvo.png" alt="Selo Corvo"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- =========================================================
+        ARQUIVO ANTERIOR AO CORVO
+    ========================================================= -->
+
+    <section class="tabela">
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="MoldeTabela"><img src="midia/Molde2E.png" alt=""><span class="fundoMolde">Títulos</span></th>
+                    <th>Membros</th>
+                    <th class="MoldeTabela"><span class="fundoMolde">Situação</span><img src="midia/Molde2D.png" alt=""></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr><td><b>A Casa das Cortinas Fechadas</b></td><td class="membros-espetaculo"><i class="Mystery">???</i></td><td><i class="Mystery">Registro incompleto</i></td></tr>
+
+                <tr><td><b>O Espelho de Saint-Lys</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><i class="Mystery">???</i></td><td>Concluído - <i class="Mystery">???</i></td></tr>
+
+                <tr><td><b>A Mulher na Última Fileira</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Homem que Sabia o Final</b></td><td class="membros-espetaculo"><i class="Mystery">???</i></td><td><i class="Mystery">Registro incompleto</i></td></tr>
+
+                <tr><td><b>As Sete Testemunhas</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"><i class="Mystery">???</i></td><td>Concluído - <i class="Mystery">???</i></td></tr>
+
+                <tr><td><b>O Quarto Ato</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td><td>Concluído - <b class="fracasso">Fracasso</b></td></tr>
+
+                <tr><td><b>Um Truque para os Mortos</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td><td>Concluído - <b>Sucesso</b></td></tr>
+
+                <tr><td><b>O Primeiro Improviso</b></td><td class="membros-espetaculo"><img src="midia/Selos/Max/Visionária.png" alt="Selo Visionária"></td><td>Concluído - <i class="Mystery">???</i></td></tr>
+
+                <tr><td><b>Sem título</b></td><td class="membros-espetaculo"><i class="Mystery">???</i></td><td><i class="Mystery">Registro danificado</i></td></tr>
+
+                <tr><td><b>Sem título</b></td><td class="membros-espetaculo"><i class="Mystery">???</i></td><td><i class="Mystery">Registro danificado</i></td></tr>
+
+                <tr><td><b class="Mystery">???</b></td><td class="membros-espetaculo"><i class="Mystery">???</i></td><td><i class="Mystery">???</i></td></tr>
+
+            </tbody>
+        </table>
+    </section>
+    <div id="EspecFooter">
+    <button class="EspecButtons" id="abrirRegistro">Novo Espetáculo</button>
+    <button class="EspecButtons" id="EspecAnt">Mais Recente</button>
+    <button class="EspecButtons" id="EspecProx">Mais Antigo</button>
+    </div>
+    <div id="modalRegistro">
+        <div id="janelaRegistro">
+        <section id="registro">
+            <h2>Registro de Palco</h2>
+            <button id="fecharRegistro">X</button>
+            <form>
+                <fieldset class="card-form">
+                    <legend>Produção</legend>
+                <p>
+                <label for="title" class="indicador">⟡ Título:</label>
+                <input type="text" name="title" id="title" placeholder="Título...">
+                </p>
+                <p>
+                <label for="roteirista" class="indicador">⟡ Roteirista:</label>
+                <select name="roteirista" id="roteirista">
+                    <option value="diletante">Diletante</option>
+                    <option value="corvo">Corvo</option>
+                    <option value="arauto">Arauto</option>
+                    <option value="rosa">Rosa</option>
+                    <option value="vibora">Víbora</option>
+                    <option value="poeta">Poeta</option>
+                    <option value="marionete">Marionete</option>
+                    <option value="relogio">Relógio</option>
+                </select>
+                </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Participantes</legend>
+                <p><span class="indicador">⟡ Auxiliares: </span><br></p>
+                    <div class="auxiliares">
+                        <label><input type="checkbox" name="auxiliares" value="diletante">Diletante</label>
+                        <label><input type="checkbox" name="auxiliares" value="corvo">Corvo</label>
+                        <label><input type="checkbox" name="auxiliares" value="arauto">Arauto</label>
+                        <label><input type="checkbox" name="auxiliares" value="rosa">Rosa</label>
+                        <label><input type="checkbox" name="auxiliares" value="vibora">Víbora</label>
+                        <label><input type="checkbox" name="auxiliares" value="poeta">Poeta</label>
+                        <label><input type="checkbox" name="auxiliares" value="marionete">Marionete</label>
+                        <label><input type="checkbox" name="auxiliares" value="relogio">Relógio</label>
+                        <label><input type="checkbox" name="auxiliares" value="mimica">Mímica</label>
+                    </div>
+                </fieldset>
+                <fieldset class="card-form">
+                    <legend>Andamento</legend>
+                <p>
+                    <span class="indicador">⟡ Situação: </span><br>
+                    <input type="radio" name="situacao" id="espera" value="espera"> 
+                    <label for="espera">Em espera</label> <br>
+                    <input type="radio" name="situacao" id="plan" value="plan">
+                    <label for="plan">Planejamento</label> <br>
+                    <input type="radio" name="situacao" id="progress" value="progress">
+                    <label for="progress">Em progresso</label> <br>
+                    <input type="radio" name="situacao" id="done" value="done">
+                    <label for="done">Concluído</label>
+                </p>
+                <p>
+                    <span  class="indicador">⟡ Resultado: </span><br>
+                    <select name="result" id="result" disabled>
+                        <option value="sucesso">Sucesso</option>
+                        <option value="falha">Fracasso</option>
+                    </select>
+                </p>
+                </fieldset>
+                <button type="submit" id="Registrar">Registrar</button>
+            </form>
+        </section>
+        </div>
+    </div>
     </main>
+    <script src="espetaculos.js"></script>
 </body>
 </html>

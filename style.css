@@ -1020,7 +1020,6 @@ legend{
 }
 .nomesAcervo img{
     width: 200px;
-    transform: translateY(-20%);
 }
 .seção{
     background: radial-gradient(circle, rgb(109, 7, 7), rgb(58, 5, 5));
